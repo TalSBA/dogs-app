@@ -8,7 +8,7 @@ function Home(props) {
     <div className="p-home">
       <h1>Dogs Book</h1>
       <h4>Man's Best Friend</h4>
-      <Link to="/Gallery">
+      <Link to="/Breeds">
         <Button>Woof!</Button>
       </Link>
     </div>

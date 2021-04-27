@@ -1,5 +1,6 @@
 import { HashRouter, Route, Switch } from "react-router-dom";
-import Gallery from "./Pages/Gallery";
+import Breeds from "./Pages/Breeds";
+import Breed from "./Pages/Breed";
 import Home from "./Pages/Home";
 import "./Styles/App.css";
 
@@ -11,8 +12,11 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/Gallery">
-            <Gallery />
+          <Route exact path="/Breeds">
+            <Breeds />
+          </Route>
+          <Route exact path="/Breeds/:breed">
+            <Breed />
           </Route>
         </Switch>
       </HashRouter>

@@ -5,7 +5,7 @@ import "../Styles/DogCard.css";
 function DogCard({breed, image}) {
   return (
     <div className="c-dog-card">
-      <Card style={{ width: '18rem' }}>
+      <Card>
         <Card.Img variant="top" src={image} />
         <Card.Body>
           <Card.Title>{breed}</Card.Title>

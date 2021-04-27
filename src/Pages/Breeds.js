@@ -1,12 +1,13 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import DogCard from "../Components/DogCard";
 import SearchBox from "../Components/SearchBox";
 import DogModel from "../Model/DogModel";
-import "../Styles/Gallery.css";
+import "../Styles/Breeds.css";
 
-function Gallery(props) {
+function Breeds(props) {
   const [dogs, setDogs] = useState([]);
   const [searchText, setSearchText] = useState("");
 
@@ -47,7 +48,7 @@ function Gallery(props) {
   }
 
   return (
-    <Container className="p-gallery">
+    <Container className="p-breeds">
       <div className="head-page">
         <SearchBox
           placeholder="Search..."
@@ -59,8 +60,8 @@ function Gallery(props) {
       <Row>
         {dogsCard &&
           dogsCard.map((dog, index) => (
-            <Col key={index} lg={6} md={7}>
-              <DogCard key={index} breed={dog.breedName} image={dog.image} />
+            <Col key={index} lg={4} md={6}>
+              <Link to={`/Breeds/${dog.breedName}`}><DogCard key={index} breed={dog.breedName} image={dog.image} /></Link>
             </Col>
           ))}
       </Row>
@@ -68,4 +69,4 @@ function Gallery(props) {
   );
 }
 
-export default Gallery;
+export default Breeds;

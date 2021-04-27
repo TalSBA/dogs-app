@@ -1,0 +1,8 @@
+
+.c-dog-card{
+    margin-top: 50px;
+}
+.c-dog-card .card-img-top{
+    width: 100%;
+    height: 200px;
+}

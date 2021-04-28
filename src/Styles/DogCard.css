@@ -1,13 +1,4 @@
 
 .c-dog-card{
     margin-top: 20px;
-    width: 50%;
-}
-.c-dog-card .card{
-    padding: 0;
-    width: 350px;
-}
-.c-dog-card .card-img-top{
-    height: 200px;
-    margin: 0 auto;
 }

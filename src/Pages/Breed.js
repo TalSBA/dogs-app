@@ -2,6 +2,9 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import ImageModal from "../Components/ImageModal";
+import Masonry from "react-masonry-css";
+import "../Styles/Breed.css";
+import { Card } from "react-bootstrap";
 
 function Breed() {
   const { breed } = useParams();
@@ -24,19 +27,23 @@ function Breed() {
   }, []);
 
   return (
-    <div>
+    <div className="p-breed">
       <h1>{breed}</h1>
-      {breedImages &&
-        breedImages.map((breed) => {
-          return (
-            <img
-              width="250px"
-              height="150px"
-              src={breed}
-              onClick={() => setShowModal({ state: true, image: breed })}
-            ></img>
-          );
-        })}
+      <Masonry
+        breakpointCols={3}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column"
+      >
+        {breedImages &&
+          breedImages.map((breed) => {
+            return (
+              <Card onClick={() => setShowModal({ state: true, image: breed })}>
+                <Card.Img variant="top" src={breed} />
+              </Card>
+            );
+          })}
+      </Masonry>
+
       <ImageModal
         show={showModal.state}
         breedImage={showModal.image}

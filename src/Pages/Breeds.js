@@ -6,6 +6,7 @@ import DogCard from "../Components/DogCard";
 import SearchBox from "../Components/SearchBox";
 import DogModel from "../Model/DogModel";
 import "../Styles/Breeds.css";
+import Masonry from "react-masonry-css";
 
 function Breeds(props) {
   const [dogs, setDogs] = useState([]);
@@ -57,14 +58,18 @@ function Breeds(props) {
         />
         <Button onClick={() => loadDogs()}>Update Images</Button>
       </div>
-      <Row>
+      <Masonry
+        breakpointCols={3}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column"
+      >
         {dogsCard &&
           dogsCard.map((dog, index) => (
-            <Col key={index} lg={4} md={6}>
-              <Link to={`/Breeds/${dog.breedName}`}><DogCard key={index} breed={dog.breedName} image={dog.image} /></Link>
-            </Col>
+            <Link to={`/Breeds/${dog.breedName}`}>
+              <DogCard key={index} breed={dog.breedName} image={dog.image} />
+            </Link>
           ))}
-      </Row>
+      </Masonry>
     </Container>
   );
 }

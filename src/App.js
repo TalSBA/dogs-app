@@ -3,13 +3,15 @@ import Breeds from "./Pages/Breeds";
 import Breed from "./Pages/Breed";
 import Home from "./Pages/Home";
 import "./Styles/App.css";
+import Menu from "./Components/Menu";
 
 function App() {
   return (
     <div className="App">
+      <Menu items={["Home", "Breeds"]} />
       <HashRouter>
         <Switch>
-          <Route exact path="/">
+          <Route exact path={["/", "/Home"]}>
             <Home />
           </Route>
           <Route exact path="/Breeds">

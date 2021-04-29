@@ -7,7 +7,6 @@ import "../Styles/Menu.css";
 function Menu({ items }) {
   return (
     <div className="c-menu">
-      <Container fluid>
         <Navbar bg="dark" variant="dark">
           <Nav className="mr-auto">
             {items.map((item) => {
@@ -15,7 +14,6 @@ function Menu({ items }) {
             })}
           </Nav>
         </Navbar>
-      </Container>
     </div>
   );
 }

@@ -8,13 +8,11 @@ function Home(props) {
   return (
     <div className="p-home">
       <Header />
-      <Container fluid>
         <div className="home-img">
           <h1>
             Think <br /> P<img src={dogImg}></img>wsitive!
           </h1>
         </div>
-      </Container>
     </div>
   );
 }

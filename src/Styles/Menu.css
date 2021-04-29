@@ -1,12 +1,17 @@
-.c-menu{
-    font-family: Chelsea_Market;
+.c-menu {
+  font-family: Chelsea_Market;
 }
-.c-menu .icon{
-    margin-bottom: 5px;
+.c-menu .icon {
+  margin-bottom: 5px;
 }
-
+.c-menu .navbar {
+  height: 30px;
+  background-color: rgba(247, 247, 247, 1) !important;
+}
+.c-menu .navbar a {
+  color: black !important;
+}
 @font-face {
-    font-family: Chelsea_Market;
-    src: url("./Chelsea_Market/ChelseaMarket-Regular.ttf");
-  }
-  
+  font-family: Chelsea_Market;
+  src: url("./Chelsea_Market/ChelseaMarket-Regular.ttf");
+}

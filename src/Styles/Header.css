@@ -1,0 +1,14 @@
+.c-header {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.c-header h1,
+h4,
+.icon {
+  font-family: Chelsea_Market;
+  color: rgb(143, 211, 232);
+}
+.c-header h1 {
+  font-size: 50px;
+}

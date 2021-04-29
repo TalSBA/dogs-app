@@ -10,9 +10,6 @@ function Menu({ items }) {
   return !redirectTo ? (
     <div className="c-menu">
       <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#/">
-          <FaDog className="icon" fontSize="24px"/>
-        </Navbar.Brand>
         <Nav className="mr-auto">
           {items.map((item) => {
             return (

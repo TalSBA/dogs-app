@@ -7,6 +7,8 @@ import SearchBox from "../Components/SearchBox";
 import DogModel from "../Model/DogModel";
 import "../Styles/Breeds.css";
 import Masonry from "react-masonry-css";
+import Menu from "../Components/Menu";
+import Header from "../Components/Header";
 
 function Breeds(props) {
   const [dogs, setDogs] = useState([]);
@@ -62,24 +64,27 @@ function Breeds(props) {
   }
 
   return (
-    <Container className="p-breeds">
-      <div className="head-page">
-        <SearchBox
-          placeholder="Search..."
-          searchText={searchText}
-          onSearchChange={handleSearchChange}
-        />
-        <Button onClick={() => loadDogs()}>Update Images</Button>
-      </div>
-      <Masonry
-        breakpointCols={3}
-        className="my-masonry-grid"
-        columnClassName="my-masonry-grid_column"
-      >
-        {dogs.length === breedsCount && dogsCard}
-      </Masonry>
-      {isLoading && <Spinner animation="grow" />}
-    </Container>
+    <div className="p-breeds">
+      <Header />
+      <Container>
+        <div className="head-page">
+          <SearchBox
+            placeholder="Search..."
+            searchText={searchText}
+            onSearchChange={handleSearchChange}
+          />
+          <Button onClick={() => loadDogs()}>Update Images</Button>
+        </div>
+        <Masonry
+          breakpointCols={3}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+        >
+          {dogs.length === breedsCount && dogsCard}
+        </Masonry>
+        {isLoading && <Spinner animation="grow" />}
+      </Container>
+    </div>
   );
 }
 

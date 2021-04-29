@@ -8,7 +8,6 @@ import Menu from "./Components/Menu";
 function App() {
   return (
     <div className="App">
-      <Menu items={["Home", "Breeds"]} />
       <HashRouter>
         <Switch>
           <Route exact path={["/", "/Home"]}>

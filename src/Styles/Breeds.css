@@ -1,6 +1,7 @@
-.p-breeds{
+.p-breeds {
   margin: 0 auto;
   padding: 0;
+  width: 100%;
 }
 
 .p-breeds .head-page {
@@ -10,10 +11,11 @@
 }
 
 .p-breeds .head-page .btn {
-  background-color: #343a40;
+  background-color: rgb(143, 211, 232);
+  color: black;
   border: none;
 }
-.p-breeds .spinner-grow{
+.p-breeds .spinner-grow {
   background: url("./dog.png");
   background-position: center;
   background-repeat: no-repeat;

@@ -1,14 +1,34 @@
 .p-home {
   width: 100%;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .p-home h1,
-h4 {
+h4,
+.icon {
   font-family: Chelsea_Market;
+  color: rgb(143, 211, 232);
 }
 .p-home h1 {
   font-size: 50px;
+}
+.p-home .home-img {
+  background: url("./dog.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 75vh;
+}
+
+.p-home .home-img > h1 {
+    font-size: 100px;
+    padding-top: 200px;
+    padding-left: 200px;
+    color: white;
+}
+.p-home .home-img > h1 > img {
+  width: 100px;
+  height: 100px;
 }
 
 @font-face {

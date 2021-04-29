@@ -1,16 +1,17 @@
 import React from "react";
-import { Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import "../Styles/Home.css";
+import Header from "../Components/Header";
+import dogImg from "../Styles/dog.png";
 
 function Home(props) {
   return (
     <div className="p-home">
-      <h1>Dogs Book</h1>
-      <h4>Man's Best Friend</h4>
-      <Link to="/Breeds">
-        <Button>Woof!</Button>
-      </Link>
+      <Header />
+      <div className="home-img">
+        <h1>
+          Think <br/> P<img src={dogImg}></img>wsitive!
+        </h1>
+      </div>
     </div>
   );
 }

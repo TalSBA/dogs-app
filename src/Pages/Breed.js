@@ -4,7 +4,8 @@ import { useParams } from "react-router";
 import ImageModal from "../Components/ImageModal";
 import Masonry from "react-masonry-css";
 import "../Styles/Breed.css";
-import { Card } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
+import Header from "../Components/Header";
 
 function Breed() {
   const { breed } = useParams();
@@ -28,22 +29,27 @@ function Breed() {
 
   return (
     <div className="p-breed">
-      <h1>{breed}</h1>
-      <Masonry
-        breakpointCols={3}
-        className="my-masonry-grid"
-        columnClassName="my-masonry-grid_column"
-      >
-        {breedImages &&
-          breedImages.map((breed, index) => {
-            return (
-              <Card key={index} onClick={() => setShowModal({ state: true, image: breed })}>
-                <Card.Img variant="top" src={breed} />
-              </Card>
-            );
-          })}
-      </Masonry>
-
+      <Header />
+      <Container>
+        <h1>{breed}</h1>
+        <Masonry
+          breakpointCols={3}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+        >
+          {breedImages &&
+            breedImages.map((breed, index) => {
+              return (
+                <Card
+                  key={index}
+                  onClick={() => setShowModal({ state: true, image: breed })}
+                >
+                  <Card.Img variant="top" src={breed} />
+                </Card>
+              );
+            })}
+        </Masonry>
+      </Container>
       <ImageModal
         show={showModal.state}
         breedImage={showModal.image}

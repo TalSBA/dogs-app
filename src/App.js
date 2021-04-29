@@ -4,6 +4,7 @@ import Breed from "./Pages/Breed";
 import Home from "./Pages/Home";
 import "./Styles/App.css";
 import Menu from "./Components/Menu";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           </Route>
         </Switch>
       </HashRouter>
+      <Footer/>
     </div>
   );
 }

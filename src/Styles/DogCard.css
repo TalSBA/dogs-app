@@ -2,3 +2,13 @@
 .c-dog-card{
     margin-top: 20px;
 }
+
+
+.c-dog-card .card-title{
+    font-family: Chelsea_Market;
+}
+
+@font-face {
+    font-family: Chelsea_Market;
+    src: url("./Chelsea_Market/ChelseaMarket-Regular.ttf");
+  }

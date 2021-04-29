@@ -1,4 +1,13 @@
+.p-breed h1{
+    font-family: Chelsea_Market;
+}
+
 .p-breed .card {
     margin-top: 10px;
     cursor: pointer;
 }
+
+@font-face {
+    font-family: Chelsea_Market;
+    src: url("./Chelsea_Market/ChelseaMarket-Regular.ttf");
+  }

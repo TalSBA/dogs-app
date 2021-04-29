@@ -35,9 +35,9 @@ function Breed() {
         columnClassName="my-masonry-grid_column"
       >
         {breedImages &&
-          breedImages.map((breed) => {
+          breedImages.map((breed, index) => {
             return (
-              <Card onClick={() => setShowModal({ state: true, image: breed })}>
+              <Card key={index} onClick={() => setShowModal({ state: true, image: breed })}>
                 <Card.Img variant="top" src={breed} />
               </Card>
             );

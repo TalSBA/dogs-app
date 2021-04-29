@@ -19,22 +19,27 @@ function Breeds(props) {
   function loadDogs() {
     setDogs([]);
     let count = 10;
-    axios.get("https://dog.ceo/api/breeds/list/all").then((response) => {
-      for (const breed in response.data.message) {
-        if (count === 0) {
-          break;
+    axios
+      .get("https://dog.ceo/api/breeds/list/all")
+      .then((response) => {
+        for (const breed in response.data.message) {
+          if (count === 0) {
+            break;
+          }
+          count--;
+          axios
+            .get("https://dog.ceo/api/breed/" + breed + "/images/random")
+            .then((response2) => {
+              setDogs((oldArr) => [
+                ...oldArr,
+                new DogModel(breed, response2.data.message),
+              ]);
+            });
         }
-        count--;
-        axios
-          .get("https://dog.ceo/api/breed/" + breed + "/images/random")
-          .then((response2) => {
-            setDogs((oldArr) => [
-              ...oldArr,
-              new DogModel(breed, response2.data.message),
-            ]);
-          });
-      }
-    });
+      })
+      .then(() => {
+        console.log("text");
+      });
   }
 
   function handleSearchChange(newSearchText) {

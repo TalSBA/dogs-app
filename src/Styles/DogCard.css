@@ -1,14 +1,23 @@
-
-.c-dog-card{
-    margin-top: 20px;
+.c-dog-card {
+  margin-top: 20px;
+  color: black;
 }
 
-
-.c-dog-card .card-title{
-    font-family: Chelsea_Market;
+.c-dog-card .dog-icon > img {
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+.c-dog-card:hover .dog-icon > img {
+  text-decoration: none;
+  display: inline-block;
+}
+.c-dog-card .card-title {
+  font-family: Chelsea_Market;
+  display: inline-block;
 }
 
 @font-face {
-    font-family: Chelsea_Market;
-    src: url("./Chelsea_Market/ChelseaMarket-Regular.ttf");
-  }
+  font-family: Chelsea_Market;
+  src: url("./Chelsea_Market/ChelseaMarket-Regular.ttf");
+}

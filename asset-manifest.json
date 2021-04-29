@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/dogs-app/static/css/main.b7698f0f.chunk.css",
-    "main.js": "/dogs-app/static/js/main.9330aab8.chunk.js",
-    "main.js.map": "/dogs-app/static/js/main.9330aab8.chunk.js.map",
+    "main.css": "/dogs-app/static/css/main.9250c6e1.chunk.css",
+    "main.js": "/dogs-app/static/js/main.d71f472b.chunk.js",
+    "main.js.map": "/dogs-app/static/js/main.d71f472b.chunk.js.map",
     "runtime-main.js": "/dogs-app/static/js/runtime-main.c5f2c7ef.js",
     "runtime-main.js.map": "/dogs-app/static/js/runtime-main.c5f2c7ef.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/dogs-app/static/css/2.4c97ca4f.chunk.css",
@@ -10,8 +10,9 @@
     "static/js/2.2183ae3a.chunk.js.map": "/dogs-app/static/js/2.2183ae3a.chunk.js.map",
     "index.html": "/dogs-app/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/dogs-app/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.b7698f0f.chunk.css.map": "/dogs-app/static/css/main.b7698f0f.chunk.css.map",
+    "static/css/main.9250c6e1.chunk.css.map": "/dogs-app/static/css/main.9250c6e1.chunk.css.map",
     "static/js/2.2183ae3a.chunk.js.LICENSE.txt": "/dogs-app/static/js/2.2183ae3a.chunk.js.LICENSE.txt",
+    "static/media/Footer.css": "/dogs-app/static/media/ChelseaMarket-Regular.3729eb19.ttf",
     "static/media/Home.css": "/dogs-app/static/media/dog.91609f48.webp",
     "static/media/Breeds.css": "/dogs-app/static/media/dog.f2dc1593.png"
   },
@@ -19,7 +20,7 @@
     "static/js/runtime-main.c5f2c7ef.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.2183ae3a.chunk.js",
-    "static/css/main.b7698f0f.chunk.css",
-    "static/js/main.9330aab8.chunk.js"
+    "static/css/main.9250c6e1.chunk.css",
+    "static/js/main.d71f472b.chunk.js"
   ]
 }

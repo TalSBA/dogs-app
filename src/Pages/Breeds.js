@@ -12,7 +12,7 @@ function Breeds(props) {
   const [dogs, setDogs] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [isLoading, setLoading] = useState(true);
-
+  const breedsCount = 10;
   useEffect(() => {
     loadDogs();
   }, []);
@@ -20,7 +20,7 @@ function Breeds(props) {
   function loadDogs() {
     setLoading(true);
     setDogs([]);
-    let count = 10;
+    let count = breedsCount;
     axios
       .get("https://dog.ceo/api/breeds/list/all")
       .then((response) => {
@@ -39,10 +39,8 @@ function Breeds(props) {
             });
         }
       })
-      .then(() => {
-        setTimeout(function () {
-          setLoading(false);
-        }, 3000);
+      .finally(() => {
+        setLoading(false);
       });
   }
 
@@ -52,9 +50,15 @@ function Breeds(props) {
 
   let dogsCard;
   if (dogs) {
-    dogsCard = dogs.filter((dog) => {
-      return dog.breedName.toLowerCase().includes(searchText.toLowerCase());
-    });
+    dogsCard = dogs
+      .filter((dog) => {
+        return dog.breedName.toLowerCase().includes(searchText.toLowerCase());
+      })
+      .map((dog, index) => (
+        <Link to={`/Breeds/${dog.breedName}`}>
+          <DogCard key={index} breed={dog.breedName} image={dog.image} />
+        </Link>
+      ));
   }
 
   return (
@@ -72,12 +76,7 @@ function Breeds(props) {
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column"
       >
-        {dogsCard &&
-          dogsCard.map((dog, index) => (
-            <Link to={`/Breeds/${dog.breedName}`}>
-              <DogCard key={index} breed={dog.breedName} image={dog.image} />
-            </Link>
-          ))}
+        {dogs.length === breedsCount && dogsCard}
       </Masonry>
       {isLoading && <Spinner animation="grow" />}
     </Container>

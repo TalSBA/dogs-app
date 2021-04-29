@@ -6,13 +6,16 @@
 .p-breeds .head-page {
   display: flex;
   margin-top: 20px;
+  justify-content: space-between;
 }
 
 .p-breeds .head-page .btn {
-  margin-left: auto;
   background-color: #343a40;
   border: none;
 }
-.p-breeds .row{
-  margin: 0 auto;
+.p-breeds .spinner-grow{
+  background: url("./dog.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

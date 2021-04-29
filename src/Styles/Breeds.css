@@ -10,6 +10,8 @@
 
 .p-breeds .head-page .btn {
   margin-left: auto;
+  background-color: #343a40;
+  border: none;
 }
 .p-breeds .row{
   margin: 0 auto;

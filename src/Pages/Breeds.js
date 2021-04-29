@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row, Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import DogCard from "../Components/DogCard";
 import SearchBox from "../Components/SearchBox";
@@ -11,12 +11,14 @@ import Masonry from "react-masonry-css";
 function Breeds(props) {
   const [dogs, setDogs] = useState([]);
   const [searchText, setSearchText] = useState("");
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     loadDogs();
   }, []);
 
   function loadDogs() {
+    setLoading(true);
     setDogs([]);
     let count = 10;
     axios
@@ -38,7 +40,9 @@ function Breeds(props) {
         }
       })
       .then(() => {
-        console.log("text");
+        setTimeout(function () {
+          setLoading(false);
+        }, 3000);
       });
   }
 
@@ -75,6 +79,7 @@ function Breeds(props) {
             </Link>
           ))}
       </Masonry>
+      {isLoading && <Spinner animation="grow" />}
     </Container>
   );
 }

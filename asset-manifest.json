@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/dogs-app/static/css/main.39c2ba64.chunk.css",
-    "main.js": "/dogs-app/static/js/main.d269cc0e.chunk.js",
-    "main.js.map": "/dogs-app/static/js/main.d269cc0e.chunk.js.map",
+    "main.css": "/dogs-app/static/css/main.e9b0b708.chunk.css",
+    "main.js": "/dogs-app/static/js/main.5c5702e7.chunk.js",
+    "main.js.map": "/dogs-app/static/js/main.5c5702e7.chunk.js.map",
     "runtime-main.js": "/dogs-app/static/js/runtime-main.c5f2c7ef.js",
     "runtime-main.js.map": "/dogs-app/static/js/runtime-main.c5f2c7ef.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/dogs-app/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.e750632b.chunk.js": "/dogs-app/static/js/2.e750632b.chunk.js",
-    "static/js/2.e750632b.chunk.js.map": "/dogs-app/static/js/2.e750632b.chunk.js.map",
+    "static/js/2.2183ae3a.chunk.js": "/dogs-app/static/js/2.2183ae3a.chunk.js",
+    "static/js/2.2183ae3a.chunk.js.map": "/dogs-app/static/js/2.2183ae3a.chunk.js.map",
     "index.html": "/dogs-app/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/dogs-app/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.39c2ba64.chunk.css.map": "/dogs-app/static/css/main.39c2ba64.chunk.css.map",
-    "static/js/2.e750632b.chunk.js.LICENSE.txt": "/dogs-app/static/js/2.e750632b.chunk.js.LICENSE.txt",
-    "static/media/Menu.css": "/dogs-app/static/media/ChelseaMarket-Regular.3729eb19.ttf",
+    "static/css/main.e9b0b708.chunk.css.map": "/dogs-app/static/css/main.e9b0b708.chunk.css.map",
+    "static/js/2.2183ae3a.chunk.js.LICENSE.txt": "/dogs-app/static/js/2.2183ae3a.chunk.js.LICENSE.txt",
+    "static/media/Home.css": "/dogs-app/static/media/dog.91609f48.webp",
     "static/media/Breeds.css": "/dogs-app/static/media/dog.f2dc1593.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c5f2c7ef.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.e750632b.chunk.js",
-    "static/css/main.39c2ba64.chunk.css",
-    "static/js/main.d269cc0e.chunk.js"
+    "static/js/2.2183ae3a.chunk.js",
+    "static/css/main.e9b0b708.chunk.css",
+    "static/js/main.5c5702e7.chunk.js"
   ]
 }

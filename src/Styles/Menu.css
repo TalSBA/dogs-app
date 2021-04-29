@@ -11,6 +11,9 @@
 .c-menu .navbar a {
   color: black !important;
 }
+.c-menu .navbar a:hover {
+  color: rgb(63, 174, 207) !important;
+}
 @font-face {
   font-family: Chelsea_Market;
   src: url("./Chelsea_Market/ChelseaMarket-Regular.ttf");
